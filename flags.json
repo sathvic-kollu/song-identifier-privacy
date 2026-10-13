@@ -1,0 +1,7 @@
+{
+  "lyricsEnabled": true,
+  "deezerEnabled": true,
+  "appleFallbackEnabled": true,
+  "adsEnabled": true,
+  "minSupportedVersion": 0
+}

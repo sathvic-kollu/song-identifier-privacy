@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Music ID: Song Identifier — Privacy Policy</title>
+<style>
+  :root { --bg:#FBF7F2; --fg:#1B1A1F; --muted:#5E5A66; --accent:#0B7F6F; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#111316; --fg:#ECEAF0; --muted:#A7A3B0; --accent:#4FD9C1; } }
+  body { background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; margin:0; }
+  main { max-width:760px; margin:0 auto; padding:24px 16px 64px; }
+  h1 { font-size:1.6rem; margin:0 0 4px; } h2 { font-size:1.15rem; margin-top:28px; color:var(--accent); }
+  p, li { color:var(--fg); } .muted { color:var(--muted); } a { color:var(--accent); }
+  table { border-collapse:collapse; width:100%; font-size:.95rem; } td, th { border-top:1px solid rgba(127,127,127,.3); padding:8px 6px; text-align:left; vertical-align:top; }
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy Policy — Music ID: Song Identifier</h1>
+<p class="muted">Android app <code>app.songidentifier.musicfinder</code> · Publisher: Zoopet · Effective 13 October 2026</p>
+
+<p>Music ID names the song playing near you. We built it so that it works without an account and keeps your song
+history on your phone. This policy explains exactly what data the app handles and why.</p>
+
+<h2>1. Microphone and song recognition</h2>
+<ul>
+  <li>The app uses the microphone only after you tap the listen button (or the widget, Quick Settings tile or shortcut),
+      for up to 15 seconds, while the app is open on screen. It never listens in the background.</li>
+  <li>The sound is turned into an audio <strong>signature</strong> on your phone. Only that signature is sent to
+      Apple's ShazamKit service to find the song; the recording itself is not sent. Apple describes signatures as a
+      one-way representation from which the original audio cannot be recreated.</li>
+  <li>If you are offline, a short clip (about 10 seconds) is saved in the app's private storage so it can be matched
+      when you reconnect. It is deleted as soon as it is matched, or after 14 days. It is never backed up or shared.</li>
+</ul>
+
+<h2>2. Your song history</h2>
+<p>Identified songs, favourites and settings are stored only on your device. You can export them as a CSV file or
+delete them at any time in the app. If you use Android's own backup, your history and settings may be included in your
+personal Google backup; offline clips are excluded.</p>
+
+<h2>3. Data sent to third-party services</h2>
+<table>
+  <tr><th>Service</th><th>What is sent</th><th>Why</th></tr>
+  <tr><td>Apple ShazamKit</td><td>Audio signature, device locale, IP address</td><td>Song recognition</td></tr>
+  <tr><td>Our token service (Cloudflare Workers)</td><td>IP address, app identifier</td><td>Issues the short-lived access token ShazamKit requires; no data is stored</td></tr>
+  <tr><td>Deezer API; Apple iTunes Search / Apple Music charts</td><td>Song title/artist or search text, country code, IP address</td><td>Charts, search, artist/album pages and 30-second previews</td></tr>
+  <tr><td>LRCLIB (lrclib.net)</td><td>Song title, artist, album, duration, IP address</td><td>Lyrics</td></tr>
+  <tr><td>Google AdMob, with Unity Ads through mediation</td><td>Advertising ID, device and app information, approximate location derived from IP, ad interactions</td><td>Showing ads, ad measurement and fraud prevention</td></tr>
+  <tr><td>Google Play Billing / Samsung In-App Purchase</td><td>Purchase details handled by the store</td><td>The optional one-time "Remove ads" purchase</td></tr>
+  <tr><td>Static settings file (GitHub Pages)</td><td>IP address</td><td>Feature switches; no identifiers are sent</td></tr>
+</table>
+<p>The app contains no analytics SDK, no push-notification SDK and no account system. We do not sell personal data.</p>
+
+<h2>4. Advertising and your choices</h2>
+<p>Where required (for example in the EEA, the UK, Switzerland and some US states) the app asks for your consent with
+Google's consent tool before any ad is requested. You can change your choice at any time in
+<em>Settings › Ad privacy choices</em>. You can reset or delete your Advertising ID in your phone's Google settings.
+Buying "Remove ads" stops all ad requests.</p>
+
+<h2>5. Permissions</h2>
+<ul>
+  <li><strong>Microphone</strong> — song recognition, only when you start it.</li>
+  <li><strong>Notifications</strong> (optional) — to tell you when songs saved offline have been identified.</li>
+  <li><strong>Internet / network state</strong> — matching, catalogue, lyrics and ads.</li>
+</ul>
+
+<h2>6. Children</h2>
+<p>Music ID is not directed at children under 13 and is not designed for them.</p>
+
+<h2>7. Security and retention</h2>
+<p>All network traffic uses HTTPS. Data on your phone stays until you delete it or uninstall the app. Third-party
+services keep data according to their own policies:
+<a href="https://www.apple.com/legal/privacy/">Apple</a>, <a href="https://www.deezer.com/legal/personal-datas">Deezer</a>,
+<a href="https://policies.google.com/privacy">Google</a>, <a href="https://unity.com/legal/privacy-policy">Unity</a>,
+<a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>.</p>
+
+<h2>8. Lyrics</h2>
+<p>Lyrics come from the LRCLIB community. If you hold rights to lyrics shown in the app and want them removed, write to
+us and we will act promptly.</p>
+
+<h2>9. Contact</h2>
+<p>Zoopet — <a href="mailto:contact@zoopet.in">contact@zoopet.in</a>. We will update this page if the app's data
+practices change; the effective date above shows the latest version.</p>
+</main>
+</body>
+</html>
